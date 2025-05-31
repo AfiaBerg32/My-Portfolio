@@ -240,24 +240,25 @@ p{
 
 .form-line {
   border: none;
-  border-bottom: 2px solid #000;   /* black bottom line */
+  border-bottom: 2px solid #000;
   background: transparent;
   padding: 8px 4px;
   font-size: 16px;
   width: 100%;
+  max-width: 400px;          /* Optional: restrict width */
   margin-bottom: 16px;
   outline: none;
+  resize: none;              /* prevent resizing the textarea */
 }
 
 .form-line::placeholder {
-  color: #999;                    /* softer placeholder color */
+  color: #999;
 }
 
 .form-line:focus {
-  border-bottom: 2px solid #555;  /* darker line on focus */
+  border-bottom: 2px solid #555;
 }
 
-/* Optional styling for the button */
 #contact-btn {
   background-color: #000;
   color: #fff;
@@ -267,6 +268,11 @@ p{
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
+#contact-btn:hover {
+  background-color: #333;
+}
+
 
 #contact-btn:hover {
   background-color: #333;
