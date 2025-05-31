@@ -237,6 +237,42 @@ p{
     margin-top: 30px;
     cursor: pointer;
 }
+
+.form-line {
+  border: none;
+  border-bottom: 2px solid #000;   /* black bottom line */
+  background: transparent;
+  padding: 8px 4px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 16px;
+  outline: none;
+}
+
+.form-line::placeholder {
+  color: #999;                    /* softer placeholder color */
+}
+
+.form-line:focus {
+  border-bottom: 2px solid #555;  /* darker line on focus */
+}
+
+/* Optional styling for the button */
+#contact-btn {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact-btn:hover {
+  background-color: #333;
+}
+
+
 #col{
     width: 40%;
     height: 56vh;
